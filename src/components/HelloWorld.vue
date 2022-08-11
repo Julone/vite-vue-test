@@ -6,7 +6,7 @@ defineProps<{ msg: string }>()
 
 const count = ref(0)
 console.log(count)
-
+// vnode 章节
 const vnode = {
   tag: 'div',
   props: {
@@ -24,7 +24,7 @@ const a = h('div', vnode.props, vnode.children.map(item => typeof item == 'strin
 console.log(a)
 render(a, document.body)
 
-
+// 响应式1-1
 let activeEffect
 const bucket = new Set()
 function  effect(fn) {
